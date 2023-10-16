@@ -26,6 +26,7 @@
 
 body {
   background: var(--background-mobile) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -160,4 +161,14 @@ footer {
   font-size: 14px;
   padding: 24px 0;
   text-align: center;
+}
+
+@media (min-width: 700px) {
+  :root {
+    --background-mobile: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --background-mobile: url(./assets/bg-desktop-light.jpg);
+  }
 }
